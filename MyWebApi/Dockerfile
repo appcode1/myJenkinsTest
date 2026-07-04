@@ -13,8 +13,6 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["MyWebApi/MyWebApi.csproj", "MyWebApi/"]
-COPY ["MyWebApi/Dockerfile", "MyWebApi/"]
-COPY ["MyWebApi/docker-stack.yaml", "MyWebApi/"]
 RUN dotnet restore "./MyWebApi/MyWebApi.csproj"
 COPY . .
 WORKDIR "/src/MyWebApi"
