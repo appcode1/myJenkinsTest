@@ -1,0 +1,9 @@
+﻿services:
+  stackwebapi:
+   image: 192.168.8.164/myjenkins/webapidockercicd:latest
+   ports:
+    - 8089:8080
+   deploy:
+    mode:
+     replicated
+    replicas: 2
