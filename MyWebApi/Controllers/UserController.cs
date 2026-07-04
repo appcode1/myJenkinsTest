@@ -10,7 +10,7 @@ namespace MyWebApi.Controllers
         [HttpGet]
         public string Get()
         {
-            return $"select user-v2. {DateTime.Now}";
+            return $"select user-v3. {DateTime.Now}";
         }
     }
 }
