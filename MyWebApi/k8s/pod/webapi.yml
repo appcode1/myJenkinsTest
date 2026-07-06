@@ -7,7 +7,6 @@ metadata:
 spec:
  containers:
   - image: 192.168.8.164/myjenkins/webapitest:latest
-    imagePullPolicy: IfNotPresent
     name: webapitest-container
     ports:
      - containerPort: 8080
