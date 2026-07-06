@@ -10,7 +10,7 @@ namespace MyWebApi.Controllers
         [HttpGet]
         public string Get()
         {
-            return $"testing deployment again...create the deployment yaml file. {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}";
+            return $"Kubectl...deployment.create the deployment yaml file. {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}";
         }
     }
 }
