@@ -10,7 +10,7 @@ namespace MyWebApi.Controllers
         [HttpGet]
         public string Get()
         {
-            return $"Welcome! This is the HomeController of MyWebApi. {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}";
+            return $"Welcome! create the pod yaml. {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}";
         }
     }
 }
