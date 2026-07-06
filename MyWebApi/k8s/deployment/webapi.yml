@@ -1,0 +1,19 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: webapitest
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: webapitest
+ template:
+  metadata:
+   labels:
+    app: webapitest
+  spec:
+   containers:
+    - image: 192.168.8.164/myjenkins/webapitest:latest
+      name: webapi-container
+      ports:
+       - containerPort: 8080
