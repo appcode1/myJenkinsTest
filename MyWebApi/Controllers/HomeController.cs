@@ -10,7 +10,7 @@ namespace MyWebApi.Controllers
         [HttpGet]
         public string Get()
         {
-            return $"testing deployment again...create the pod-service yaml. {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}";
+            return $"testing deployment again...create the deployment. {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}";
         }
     }
 }
